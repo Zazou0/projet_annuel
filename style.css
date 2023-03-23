@@ -1,0 +1,23 @@
+body{
+    background-image: url(/img/background.png);
+    background-repeat: no-repeat; /* empêcher la répétition de l'image de fond */
+    background-size: cover; /* étirer l'image de fond pour remplir l'élément */
+}
+
+#image1{
+    width: 60px;
+    height: 60px;
+    left: 41px;
+    top: 12px;
+}
+
+#image2{
+    width: 100px;
+    height: 72.92px;
+    left: 670px;
+    top: 6px;
+}
+
+.navbar{
+    background: rgba(0, 0, 0, 0.82);
+  }
