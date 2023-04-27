@@ -16,6 +16,7 @@ body{
     height: 72.92px;
     left: 670px;
     top: 6px;
+    margin-right: -170px;
 }
 
 .navbar{
@@ -81,7 +82,7 @@ body{
   
 */
 
-.main_group{
+/**.main_group{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,15 +92,32 @@ body{
 }
 
 .square{
-    position: relative;
-    width: 80%;
-    padding-bottom: 80%; /* hauteur = largeur */
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    background: #1A1818;
-    border: 3px dashed #FFFFFF;
-    border-radius: 30px;
-    margin: 50px auto; /* Ajout de la marge en haut et en bas */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  padding-bottom: 80%;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  background: #1A1818;
+  border: 3px dashed #FFFFFF;
+  border-radius: 30px;
+  margin: 50px auto;
+  
+    
+}
+.square {
+  display: flex;
+  /**justify-content: center;
+  align-items: center;
+}
+
+
+.square img {
+  display: block;
+  margin: auto;
 }
 
 .text{
@@ -164,4 +182,90 @@ body{
     right: 5%;
     top: 50%;
     transform: translate(50%, -50%);
+}
+**/
+
+.square {
+  display: flex; /* Ajout de display:flex pour aligner les éléments verticalement */
+  align-items: center; /* Centrage vertical des éléments */
+  background-color: black;
+  border: 2px dashed white;
+  border-radius: 8px;
+  margin: 100px auto; /* Décalage vers le bas */
+  height: 400px;
+  width: 600px;
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+/**.separator {
+  border-left: 2px dashed white;
+  height: 100%;
+ 
+  margin: 20px auto ;
+  left: 50%; 
+
+}**/
+.separator {
+  border-left: 2px dashed white;
+  height: 72%; /* Réduction de la hauteur */
+  margin: 25% auto ; /* Ajout d'une marge égale à la moitié de la hauteur */
+  position: absolute;
+  left: 50%; /* Ajustement horizontal de la bordure */
+  transform: translateX(-50%); /* Centre le trait horizontalement */
+}
+.text {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.text2 {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 100px;
+  
+}
+
+
+
+.text img,
+.text2 img {
+  margin-top: 20px;
+  width: 50%;
+  height: auto;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#signin-button {
+  color: #fff;
+  background-color: #000;
+  border-color: #fff;
+  font-weight: bold;
+  border-radius: 17px;
+}
+
+
+
+#login-button {
+  color: #000; /* Couleur du texte en noir */
+  background-color: #fff; /* Couleur du fond en blanc */
+  border-color: #000; /* Couleur du cadre en noir */
+  font-weight: bold; /* Mettre le texte en gras */
+  border-radius: 17px;
+
 }
