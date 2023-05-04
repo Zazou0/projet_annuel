@@ -1,21 +1,19 @@
-<!-- page login qui demande identifiant mot de passe bouton se connecter -->
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My First Web Page</title>
+	<title> Connexion</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
 </head>
-<!-- texte "connecter vous à votre compte case identifiant et mot de passe, bouton se connecter"-->
-<body>
-    <header>
-        <nav>
-            <ul>
-                <a href="signin.html">Sign In</a>
-                <a href="login.html">Log In</a>
-            </ul>
-        </nav>
-        <p>Connecter vous à votre compte</p>
-        <p>Identifiant</p>
-        <p>Mot de passe</p>
-        <p>Se connecter</p>
-    </header>
+<body class="center">
+	<div class="login">
+		<img src="img/compte1.png" id="image3">
+		<h1>Connectez-vous à votre compte</h1>
+		<form>
+			
+			<input type="text" id="username" name="username" placeholder="Identifiant:"><br>
+			<input type="password" id="password" name="password" placeholder="Mot de passe:"><br><br>
+			<input type="submit" value="Se connecter">
+		</form>
+	</div>
+</body>
 </html>

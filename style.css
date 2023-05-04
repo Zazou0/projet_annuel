@@ -9,6 +9,7 @@ body{
     height: 60px;
     left: 41px;
     top: 12px;
+ 
 }
 
 #image2{
@@ -16,11 +17,13 @@ body{
     height: 72.92px;
     left: 670px;
     top: 6px;
-    margin-right: -170px;
+    margin-right: -140px;
 }
 
 .navbar{
     background: rgba(0, 0, 0, 0.82);
+    width: 100%;
+    
   }
 /*
 .container {
